@@ -30,13 +30,13 @@ const useStyles = makeStyles((theme) => ({
             color: "white",
             paddingBottom: "4rem",
             marginRight: "0.5rem",
-            fontSize: "50px"
+            fontSize: "40px"
         },
         [theme.breakpoints.up('md')]: {
             color: "white",
             paddingBottom: "3rem",
             marginRight: "1rem",
-            fontSize: "70px"
+            fontSize: "55px"
         },
         [theme.breakpoints.up('lg')]: {
             color: "white",
@@ -50,18 +50,19 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.up('xs')]: {
             color: "white",
             paddingTop: "1.5rem",
+            fontSize: "25px"
         },
         [theme.breakpoints.up('sm')]: {
             color: "white",
             paddingTop: "2.5rem",
             marginLeft: "0.5rem",
-            fontSize: "50px"
+            fontSize: "35px"
         },
         [theme.breakpoints.up('md')]: {
             color: "white",
             paddingTop: "3rem",
             marginLeft: "1rem",
-            fontSize: "70px"
+            fontSize: "50px"
         },
         [theme.breakpoints.up('lg')]: {
             color: "white",
@@ -214,21 +215,25 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(1),
         [theme.breakpoints.up('xs')]: {
             color: "white",
-            fontSize: "16px",
+            width: "100%",
+            fontSize: "14px",
             paddingRight: "3.25rem"
         },
         [theme.breakpoints.up('sm')]: {
             color: "white",
+            width: "100%",
             fontSize: "18px",
             paddingRight: "4rem"
         },
         [theme.breakpoints.up('md')]: {
             color: "white",
+            width: "100%",
             fontSize: "26px",
             paddingRight: "8rem"
         },
         [theme.breakpoints.up('lg')]: {
             color: "white",
+            width: "100%",
             fontSize: "30px",
             paddingRight: "12rem"
         },
@@ -318,22 +323,22 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(1),
         [theme.breakpoints.up('xs')]: {
             color: "white",
-            fontSize: "40px",
+            fontSize: "30px",
             
         },
         [theme.breakpoints.up('sm')]: {
             color: "white",
-            fontSize: "50px",
+            fontSize: "30px",
             
         },
         [theme.breakpoints.up('md')]: {
             color: "white",
-            fontSize: "60px",
+            fontSize: "40px",
             
         },
         [theme.breakpoints.up('lg')]: {
             color: "white",
-            fontSize: "60px",
+            fontSize: "50px",
             
         },
     },

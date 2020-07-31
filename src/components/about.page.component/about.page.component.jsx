@@ -93,7 +93,8 @@ const useStyles = makeStyles((theme) => ({
     introTextRoot: {
         color: "white",
         width: "80%",
-        paddingLeft: "5rem"
+        paddingLeft: "5rem",
+        overflow: "scroll"
     },
 
     introLinkRoot: {
@@ -125,7 +126,7 @@ const useStyles = makeStyles((theme) => ({
             alignItems: "center",
             marginBottom: "50px",
             backgroundColor: "#0d47a1",
-            height: "20%",
+            height: "40%",
             clipPath: "polygon(50% 0, 0 100%, 100% 100%)"
         },
         [theme.breakpoints.up('sm')]: {
@@ -169,11 +170,11 @@ const useStyles = makeStyles((theme) => ({
             marginTop: "50px",
             flexDirection: "column",
             display: "flex",
-            justifyContent: "flex-start",
+            justifyContent: "center",
             alignItems: "center",
             marginBottom: "50px",
             backgroundColor: "#0d47a1",
-            height: "20%",
+            height: "40%",
             clipPath: "polygon(0 0, 50% 100%, 100% 0)"
         },
         [theme.breakpoints.up('sm')]: {
@@ -364,19 +365,19 @@ const AboutPage = () => {
                         <Grid className="Blue-header-underline" id="Blue-header-underline-left2" item xs={12} >
                         </Grid>
 
-                        <Grid className={classes.triangleRoot} item  xs={3} sm={3} md={3}>
+                        <Grid className={classes.triangleRoot} item  xs={12} sm={3} md={3}>
                             <i className="fab fa-js" id="jsIcon" />
                             <p className={classes.iconTextRoot}>
                                 JavaScript
                             </p>
                         </Grid>
-                        <Grid className={classes.invertedTriangleRoot} item  xs={3} sm={3} md={3}>
+                        <Grid className={classes.invertedTriangleRoot} item  xs={12} sm={3} md={3}>
                             <i className="fab fa-react" id="reactIcon" />
                             <p className={classes.iconTextRoot}>
                                 ReactJS
                             </p>
                         </Grid>
-                        <Grid className={classes.triangleRoot} item  xs={3} sm={3} md={3}>
+                        <Grid className={classes.triangleRoot} item  xs={12} sm={3} md={3}>
                             <Hidden smUp>
                                 <ExpressSmallIcon id="expressSmallIcon" fill="white" className={classes.expressIconRoot} />
                             </Hidden>
@@ -384,32 +385,32 @@ const AboutPage = () => {
                                 <ExpressIcon id="expressSmallIcon" fill="white" className={classes.expressIconRoot} />
                             </Hidden>
                         </Grid>
-                        <Grid className={classes.invertedTriangleRoot} item  xs={3} sm={3} md={3}>
+                        <Grid className={classes.invertedTriangleRoot} item  xs={12} sm={3} md={3}>
                             <img className="Mongo-image" src={MongoLogo} alt="mongo-db-logo" />
                             <p className={classes.mongoIconTextRoot}>
                                 MongoDB
                             </p>
                         </Grid>
 
-                        <Grid className={classes.invertedTriangleRoot} item  xs={3} sm={3} md={3}>
+                        <Grid className={classes.invertedTriangleRoot} item  xs={12} sm={3} md={3}>
                             <i className="fab fa-html5" id="HTMLIcon" />
                             <p className={classes.iconTextRoot}>
                                 HTML
                             </p>
                         </Grid>
-                        <Grid className={classes.triangleRoot} item  xs={3} sm={3} md={3}>
+                        <Grid className={classes.triangleRoot} item  xs={12} sm={3} md={3}>
                             <i className="fab fa-css3-alt" id="CSSIcon" />
                             <p className={classes.iconTextRoot}>
                                 CSS
                             </p>
                         </Grid>
-                        <Grid className={classes.invertedTriangleRoot} item  xs={3} sm={3} md={3}>
+                        <Grid className={classes.invertedTriangleRoot} item  xs={12} sm={3} md={3}>
                             <i className="fab fa-sass" id="SassIcon" />
                             <p className={classes.iconTextRoot}>
                                 Sass
                             </p>
                         </Grid>
-                        <Grid className={classes.triangleRoot} item  xs={3} sm={3} md={3}>
+                        <Grid className={classes.triangleRoot} item  xs={12} sm={3} md={3}>
                             <i className="fab fa-node-js" id="NodeIcon" />
                             <p className={classes.iconTextRoot}>
                                 NodeJS
@@ -422,9 +423,9 @@ const AboutPage = () => {
                         <Grid className="Blue-header-underline" item xs={12} >
                         </Grid>
 
-                        <Grid className={classes.triangleRoot} item  xs={3} sm={3} md={3}>
+                        <Grid className={classes.triangleRoot} item  xs={12} sm={3} md={3}>
                             <img className="jQuery-image" src={jQueryLogo} alt="j-query-logo" />
-                                <p className={classes.mongoIconTextRoot}>
+                                <p className={classes.iconTextRoot}>
                                     jQuery
                                 </p>
                         </Grid>
