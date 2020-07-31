@@ -65,12 +65,14 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.up('xs')]: {
             color: "white",
             width: "60%",
-            paddingLeft: "7.5rem"
+            paddingLeft: "7.5rem",
+            overflow: "scroll"
         },
         [theme.breakpoints.up('sm')]: {
             color: "white",
             width: "63%",
-            paddingLeft: "9.25rem"
+            paddingLeft: "9.25rem",
+            overflow: "scroll"
         },
         [theme.breakpoints.up('md')]: {
             
@@ -294,6 +296,21 @@ const useStyles = makeStyles((theme) => ({
         },
     },
 
+    hideOnMobileSpanRoot: {
+        padding: theme.spacing(1),
+        [theme.breakpoints.up('xs')]: {
+            display: "flex"
+        },
+        [theme.breakpoints.up('sm')]: {
+            display: "flex"
+        },
+        [theme.breakpoints.up('md')]: {
+            display: "flex"
+        },
+        [theme.breakpoints.up('lg')]: {
+            display: "flex"
+        },
+    },
 }));
 
 const AboutPage = () => {
@@ -347,6 +364,7 @@ const AboutPage = () => {
                                         I develop front-end or full-stack applications in Boston, MA, or remotely.
                                         I'm interested in working with motivated teams to bring designs to life with
                                         precision.
+                                        
                                         <br /><br /> 
                                         I enjoy learning new technology, and I adapt quickly to the needs
                                         of my clients to deliver intuitive and responsive UI functionality. 
@@ -355,6 +373,7 @@ const AboutPage = () => {
                                         an audio engineer and avid music enthusiast who loves a good chat. Feel free
                                         to <Link className={classes.introLinkRoot} to="/contact">contact me
                                         </Link> for a copy of my resume.
+                                        
                                     </p>
                                 </Grid>
                             </Hidden>
@@ -423,7 +442,7 @@ const AboutPage = () => {
                         <Grid className="Blue-header-underline" item xs={12} >
                         </Grid>
 
-                        <Grid className={classes.triangleRoot} item  xs={12} sm={3} md={3}>
+                        <Grid className={classes.triangleRoot} id="jQuery-triangle" item  xs={12} sm={3} md={3}>
                             <img className="jQuery-image" src={jQueryLogo} alt="j-query-logo" />
                                 <p className={classes.iconTextRoot}>
                                     jQuery
