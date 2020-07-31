@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.up('xs')]: {
             color: "white",
             paddingBottom: "1.5rem",
+            fontSize: "14px"
         },
         [theme.breakpoints.up('sm')]: {
             color: "white",
@@ -50,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.up('xs')]: {
             color: "white",
             paddingTop: "1.5rem",
-            fontSize: "25px"
+            fontSize: "14px"
         },
         [theme.breakpoints.up('sm')]: {
             color: "white",
@@ -217,7 +218,7 @@ const useStyles = makeStyles((theme) => ({
             color: "white",
             width: "100%",
             fontSize: "14px",
-            paddingRight: "3.25rem"
+            paddingLeft: "1rem"
         },
         [theme.breakpoints.up('sm')]: {
             color: "white",
@@ -367,21 +368,21 @@ const ContactPage = () => {
             <div className="ContactGridContainer">
                 <Grid className="ContactGrid" container spacing={1}>
 
-                    <Grid className={classes.phoneTriangleRoot} id="Phone-triangle" item xs={4} sm={4} md={4}>
+                    <Grid className={classes.phoneTriangleRoot} id="Phone-triangle" item xs={2} sm={4} md={4}>
                         <PhoneIcon className={classes.phoneIconRoot} fontSize={"large"} />
                     </Grid>
-                    <Grid className={classes.phoneTextRoot} id="Phone-text" item xs={8} sm={8} md={8}>
+                    <Grid className={classes.phoneTextRoot} id="Phone-text" item xs={10} sm={8} md={8}>
                         <p className={classes.phoneNumberRoot}>626.342.5550</p>
                     </Grid>
 
-                    <Grid className={classes.emailRoot} id="Email-text" item xs={8} sm={8} md={8}>
+                    <Grid className={classes.emailRoot} id="Email-text" item xs={10} sm={8} md={8}>
                         <p className={classes.emailAddressRoot}>crystalinecanvas@gmail.com</p>
                     </Grid>
-                    <Grid className={classes.emailTriangleRoot} id="Email-triangle" item xs={4} sm={4} md={4}>
+                    <Grid className={classes.emailTriangleRoot} id="Email-triangle" item xs={2} sm={4} md={4}>
                         <EmailIcon className={classes.emailIconRoot} fontSize={"large"} />
                     </Grid>
 
-                    <Grid className={classes.bottomRectangleRoot} id="Github-polygon" item xs={6} sm={6} md={6}>
+                    <Grid className={classes.bottomRectangleRoot} id="Github-polygon" item xs={8} sm={6} md={6}>
                         <a href="https://github.com/Crystalinecanvas">
                             <GitHubIcon className={classes.githubIconRoot} fontSize={"large"} />
                         </a>
