@@ -363,17 +363,8 @@ const AboutPage = () => {
                                     <p className={classes.hiddenIntroTextRoot}>
                                         I develop front-end or full-stack applications in Boston, MA, or remotely.
                                         I'm interested in working with motivated teams to bring designs to life with
-                                        precision.
-                                        
-                                        <br /><br /> 
-                                        I enjoy learning new technology, and I adapt quickly to the needs
-                                        of my clients to deliver intuitive and responsive UI functionality. 
-                                        <br /><br />
-                                        I am also
-                                        an audio engineer and avid music enthusiast who loves a good chat. Feel free
-                                        to <Link className={classes.introLinkRoot} to="/contact">contact me
+                                        precision.<Link className={classes.introLinkRoot} to="/contact">contact me
                                         </Link> for a copy of my resume.
-                                        
                                     </p>
                                 </Grid>
                             </Hidden>
