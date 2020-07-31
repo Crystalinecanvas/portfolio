@@ -489,7 +489,7 @@ const AboutPage = () => {
 
                         <Hidden smUp>
                             <Grid item xs={12}>
-                                <div className="hidden-triangle-text-div" id="last-hidden-triangle-text">
+                                <div className="hidden-triangle-text-div" id="second-last-hidden-triangle-text">
                                     <p className="hidden-triangle-text">NodeJS</p>
                                 </div>
                             </Grid>
