@@ -376,7 +376,7 @@ const ContactPage = () => {
                     </Grid>
 
                     <Grid className={classes.emailRoot} id="Email-text" item xs={10} sm={8} md={8}>
-                        <p className={classes.emailAddressRoot}>crystalinecanvas@gmail.com</p>
+                        <p className={classes.emailAddressRoot}>joshuakerndev@gmail.com</p>
                     </Grid>
                     <Grid className={classes.emailTriangleRoot} id="Email-triangle" item xs={2} sm={4} md={4}>
                         <EmailIcon className={classes.emailIconRoot} fontSize={"large"} />

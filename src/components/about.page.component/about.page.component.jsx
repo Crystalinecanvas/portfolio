@@ -93,8 +93,7 @@ const useStyles = makeStyles((theme) => ({
     introTextRoot: {
         color: "white",
         width: "80%",
-        paddingLeft: "5rem",
-        overflow: "scroll"
+        paddingLeft: "5rem"
     },
 
     introLinkRoot: {
