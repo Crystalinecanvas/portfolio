@@ -383,7 +383,7 @@ const ContactPage = () => {
                     </Grid>
 
                     <Grid className={classes.bottomRectangleRoot} id="Github-polygon" item xs={8} sm={6} md={6}>
-                        <a href="https://github.com/Crystalinecanvas">
+                        <a href="https://github.com/joshuakerndev">
                             <GitHubIcon className={classes.githubIconRoot} fontSize={"large"} />
                         </a>
                     </Grid>
