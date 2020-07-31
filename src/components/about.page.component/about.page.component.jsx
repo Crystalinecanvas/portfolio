@@ -65,14 +65,12 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.up('xs')]: {
             color: "white",
             width: "60%",
-            paddingLeft: "7.5rem",
-            overflow: "scroll"
+            paddingLeft: "7.5rem"
         },
         [theme.breakpoints.up('sm')]: {
             color: "white",
             width: "63%",
-            paddingLeft: "9.25rem",
-            overflow: "scroll"
+            paddingLeft: "9.25rem"
         },
         [theme.breakpoints.up('md')]: {
             
@@ -363,7 +361,7 @@ const AboutPage = () => {
                                     <p className={classes.hiddenIntroTextRoot}>
                                         I develop front-end or full-stack applications in Boston, MA, or remotely.
                                         I'm interested in working with motivated teams to bring designs to life with
-                                        precision.<Link className={classes.introLinkRoot} to="/contact">contact me
+                                        precision.<Link className={classes.introLinkRoot} to="/contact"> Contact me
                                         </Link> for a copy of my resume.
                                     </p>
                                 </Grid>
@@ -381,12 +379,30 @@ const AboutPage = () => {
                                 JavaScript
                             </p>
                         </Grid>
+
+                        <Hidden smUp>
+                            <Grid item xs={12}>
+                                <div className="hidden-triangle-text-div">
+                                    <p className="hidden-triangle-text">JavaScript</p>
+                                </div>
+                            </Grid>
+                        </Hidden>
+
                         <Grid className={classes.invertedTriangleRoot} item  xs={12} sm={3} md={3}>
                             <i className="fab fa-react" id="reactIcon" />
                             <p className={classes.iconTextRoot}>
                                 ReactJS
                             </p>
                         </Grid>
+
+                        <Hidden smUp>
+                            <Grid item xs={12}>
+                                <div className="hidden-triangle-text-div">
+                                    <p className="hidden-triangle-text">ReactJS</p>
+                                </div>
+                            </Grid>
+                        </Hidden>
+
                         <Grid className={classes.triangleRoot} item  xs={12} sm={3} md={3}>
                             <Hidden smUp>
                                 <ExpressSmallIcon id="expressSmallIcon" fill="white" className={classes.expressIconRoot} />
@@ -395,6 +411,15 @@ const AboutPage = () => {
                                 <ExpressIcon id="expressSmallIcon" fill="white" className={classes.expressIconRoot} />
                             </Hidden>
                         </Grid>
+
+                        <Hidden smUp>
+                            <Grid item xs={12}>
+                                <div className="hidden-triangle-text-div">
+                                    <p className="hidden-triangle-text">ExpressJS</p>
+                                </div>
+                            </Grid>
+                        </Hidden>
+
                         <Grid className={classes.invertedTriangleRoot} item  xs={12} sm={3} md={3}>
                             <img className="Mongo-image" src={MongoLogo} alt="mongo-db-logo" />
                             <p className={classes.mongoIconTextRoot}>
@@ -402,30 +427,73 @@ const AboutPage = () => {
                             </p>
                         </Grid>
 
+                        <Hidden smUp>
+                            <Grid item xs={12}>
+                                <div className="hidden-triangle-text-div">
+                                    <p className="hidden-triangle-text">MongoDB</p>
+                                </div>
+                            </Grid>
+                        </Hidden>
+
                         <Grid className={classes.invertedTriangleRoot} item  xs={12} sm={3} md={3}>
                             <i className="fab fa-html5" id="HTMLIcon" />
                             <p className={classes.iconTextRoot}>
                                 HTML
                             </p>
                         </Grid>
+
+                        <Hidden smUp>
+                            <Grid item xs={12}>
+                                <div className="hidden-triangle-text-div">
+                                    <p className="hidden-triangle-text">HTML</p>
+                                </div>
+                            </Grid>
+                        </Hidden>
+
                         <Grid className={classes.triangleRoot} item  xs={12} sm={3} md={3}>
                             <i className="fab fa-css3-alt" id="CSSIcon" />
                             <p className={classes.iconTextRoot}>
                                 CSS
                             </p>
                         </Grid>
+
+                        <Hidden smUp>
+                            <Grid item xs={12}>
+                                <div className="hidden-triangle-text-div">
+                                    <p className="hidden-triangle-text">Css</p>
+                                </div>
+                            </Grid>
+                        </Hidden>
+
                         <Grid className={classes.invertedTriangleRoot} item  xs={12} sm={3} md={3}>
                             <i className="fab fa-sass" id="SassIcon" />
                             <p className={classes.iconTextRoot}>
                                 Sass
                             </p>
                         </Grid>
+
+                        <Hidden smUp>
+                            <Grid item xs={12}>
+                                <div className="hidden-triangle-text-div">
+                                    <p className="hidden-triangle-text">Sass</p>
+                                </div>
+                            </Grid>
+                        </Hidden>
+
                         <Grid className={classes.triangleRoot} item  xs={12} sm={3} md={3}>
                             <i className="fab fa-node-js" id="NodeIcon" />
                             <p className={classes.iconTextRoot}>
                                 NodeJS
                             </p>
                         </Grid>
+
+                        <Hidden smUp>
+                            <Grid item xs={12}>
+                                <div className="hidden-triangle-text-div" id="last-hidden-triangle-text">
+                                    <p className="hidden-triangle-text">NodeJS</p>
+                                </div>
+                            </Grid>
+                        </Hidden>
 
                         <Grid className="Blue-header-underline" item xs={12} >
                         </Grid>
@@ -439,6 +507,14 @@ const AboutPage = () => {
                                     jQuery
                                 </p>
                         </Grid>
+
+                        <Hidden smUp>
+                            <Grid item xs={12}>
+                                <div className="hidden-triangle-text-div" id="last-hidden-triangle-text">
+                                    <p className="hidden-triangle-text">jQuery</p>
+                                </div>
+                            </Grid>
+                        </Hidden>
 
                     </Grid>
                 </div>
