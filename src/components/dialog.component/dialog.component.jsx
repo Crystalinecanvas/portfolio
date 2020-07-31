@@ -8,6 +8,7 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import Dialog from '@material-ui/core/Dialog';
 import CheckIcon from '@material-ui/icons/Check';
 import EmojiObjectsIcon from '@material-ui/icons/EmojiObjects';
+import CreateIcon from '@material-ui/icons/Create';
 import Typography from '@material-ui/core/Typography';
 import { Link } from '@material-ui/core';
 
@@ -22,7 +23,7 @@ export default function SimpleDialog(props) {
   const classes = useStyles();
   const { onClose, selectedValue, open } = props;
 
-  const { title, description, url, features, whatILearned } = selectedValue;
+  const { title, description, url, features, whatILearned, thingsToDo } = selectedValue;
 
   const handleClose = () => {
     onClose();
@@ -71,6 +72,17 @@ export default function SimpleDialog(props) {
           <ListItem>
             <EmojiObjectsIcon className={classes.dialogIconRoot} fontSize="small" />
             <ListItemText primary={learned} />
+          </ListItem>
+        ))}
+      </List>
+      <List>
+        <ListItem>
+          <ListItemText primary="Things To Do" />
+        </ListItem>
+        {thingsToDo.map((toDo) => (
+          <ListItem>
+            <CreateIcon className={classes.dialogIconRoot} fontSize="small" />
+            <ListItemText primary={toDo} />
           </ListItem>
         ))}
       </List>
