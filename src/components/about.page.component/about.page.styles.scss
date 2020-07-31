@@ -1,0 +1,215 @@
+.AboutPage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto";
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#Blue-header-underline-left {
+    animation: 0.5s ease-out 0s 1 slideInFromLeft;
+}
+
+#Blue-header-underline-left2 {
+    animation: 0.7s ease-out 0s 1 slideInFromLeft;
+}
+
+#Blue-header-underline-right {
+    animation: 0.5s ease-out 0s 1 slideInFromRight;
+}
+
+#Familiar-text {
+    animation: 0.6s ease-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromRightSlow {
+    0% {
+        transform: translateX(1000%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-500%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(500%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromLeftSlow {
+    0% {
+        transform: translateX(-1000%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromLeftVerySlow {
+    0% {
+        transform: translateX(-1700%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(700%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottomMedium {
+    0% {
+        transform: translateY(1200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottomLong {
+    0% {
+        transform: translateY(1700%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.AboutHeaderSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.AboutHeader {
+    animation: 0.8s ease-out 0s 1 slideInFromRight;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    letter-spacing: 0.15em;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    width: 70vw;
+}
+
+.Arrow-left {
+    animation: 1.5s ease-out 0s 1 slideInFromLeftVerySlow;
+}
+
+.Arrow-right {
+    animation: 0.7s ease-out 0s 1 slideInFromRightSlow;
+}
+
+#Arrow-left {
+    animation: 0.5s ease-out 0s 1 slideInFromLeftVerySlow;
+}
+
+#Arrow-right {
+    animation: 0.65s ease-out 0s 1 slideInFromRightSlow;
+}
+
+.AboutTriangleDisplay {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4rem;
+    height: 50%;
+    padding-top: 10px;
+    width: 80%;
+}
+
+.TriangleGrid {
+    display: flex;
+    justify-content: center;
+    padding-top: 4.1rem;
+    width: 100%;
+}
+
+#about-picture-polygon {
+    animation: 0.35s ease-out 0s 1 slideInFromLeft;
+}
+
+#about-intro-polygon {
+    animation: 0.2s ease-out 0s 1 slideInFromRight;
+}
+
+#jsIcon {
+    color: white;
+    font-size: 30px;
+    padding-top: 2rem;
+}
+
+#reactIcon {
+    color: white;
+    font-size: 35px;
+    padding-top: 0.5rem;
+}
+
+#expressIcon {
+    color: white;
+    background-size: 35px;
+    padding-top: 3.5rem;
+    
+}
+
+#expressSmallIcon {
+    color: white;
+    background-size: 35px;
+    padding-top: 2.25rem;
+    padding-right: 0.75rem;
+}
+
+.Mongo-image {
+   padding-bottom: 0px;
+   margin-bottom: 0px;
+}
+
+#HTMLIcon {
+    color: white;
+    font-size: 35px;
+    padding-top: 0.75rem;
+}
+
+#CSSIcon {
+    color: white;
+    font-size: 35px;
+    padding-top: 1.75rem;
+}
+
+#SassIcon {
+    color: white;
+    font-size: 28px;
+    padding-top: 1rem;
+}
+
+#NodeIcon {
+    color: white;
+    font-size: 35px;
+    padding-top: 1.5rem;
+}
+
+.jQuery-image {
+    padding-top: 25px;
+ }

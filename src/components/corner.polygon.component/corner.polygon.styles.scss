@@ -1,0 +1,33 @@
+.top-left {
+    
+    background-color: #0d47a1;
+
+    /* The points are: centered top, left bottom, right bottom */
+    clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
+}
+
+.top-right {
+    width: 15rem;
+    height: 15rem;
+    background-color: #0d47a1;
+
+    /* The points are: centered top, left bottom, right bottom */
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.bottom-right {
+    
+    background-color: #0d47a1;
+
+    /* The points are: centered top, left bottom, right bottom */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
+}
+
+.bottom-left {
+    width: 15rem;
+    height: 15rem;
+    background-color: #0d47a1;
+
+    /* The points are: centered top, left bottom, right bottom */
+    clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+}

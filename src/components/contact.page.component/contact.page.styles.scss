@@ -1,0 +1,160 @@
+.ContactPage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto";
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+// .AboutHeader {
+//     width: 100vw;
+//     display: flex;
+//     justify-content: center;
+//     padding-bottom: 5rem;
+//     font-weight: 300;
+//     letter-spacing: 0.15em;
+//     font-size: 1.5rem;
+// }
+
+.Blue-header-underline {
+    width: 90%;
+    height: 10px;
+    background-color: #0d47a1;
+    animation: 1.5s ease-out 0s 1 slideInFromLeftSlow;
+    margin-bottom: 100px;
+
+    /* The points are: centered top, left bottom, right bottom */
+    clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+}
+
+@keyframes slideInFromRightSlow {
+    0% {
+        transform: translateX(1000%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-500%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+@keyframes slideInFromLeftSlow {
+    0% {
+        transform: translateX(-1000%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromLeftVerySlow {
+    0% {
+        transform: translateX(-1700%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(700%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottomMedium {
+    0% {
+        transform: translateY(1200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottomLong {
+    0% {
+        transform: translateY(1700%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.ContactHeaderSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ContactHeader {
+    animation: 0.8s ease-out 0s 1 slideInFromLeft;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    letter-spacing: 0.15em;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    width: 70vw;
+}
+
+#Contact-arrow-left {
+    animation: 0.65s ease-out 0s 1 slideInFromLeftVerySlow;
+}
+
+#Contact-arrow-right {
+    animation: 0.5s ease-out 0s 1 slideInFromRightSlow;
+}
+
+#Contact-blue-underline {
+    animation: 0.55s ease-out 0s 1 slideInFromRightSlow;
+}
+
+#Phone-triangle {
+    animation: 0.5s ease-out 0s 1 slideInFromLeftSlow;
+}
+
+#Phone-text {
+    animation: 0.35s ease-out 0s 1 slideInFromRightSlow;
+}
+
+#Email-triangle {
+    animation: 0.55s ease-out 0s 1 slideInFromRightSlow;
+}
+
+#Email-text {
+    animation: 0.65s ease-out 0s 1 slideInFromLeftSlow;
+}
+
+#Github-polygon {
+    animation: 0.8s ease-out 0s 1 slideInFromBottomLong;
+}
+
+.ContactGridContainer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4rem;
+    height: 50%;
+    padding-top: 10px;
+    width: 80%;
+}
+
+.ContactGrid {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    width: 100%;
+}
