@@ -191,7 +191,7 @@ const WelcomePage = () => {
                                         enable: true,
                                         value_area: 800,
                                     },
-                                    value: 200,
+                                    value: 100,
                                     },
                                     opacity: {
                                     value: 0.5,
